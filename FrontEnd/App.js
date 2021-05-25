@@ -8,6 +8,13 @@ const parser = parsers.python();
 export default function App() {
   const [code, setCode] = React.useState();
 
+  // PythonShell.runString(`${code}`, null, function (err, results) {
+  //   if (err) {
+  //     throw err;
+  //   }
+  //   console.log('finished', results);
+  // });
+
   return (
     <View style={styles.container}>
       <CodeEditor
